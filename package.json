@@ -1,0 +1,32 @@
+{
+  "name": "daftacademy-frontend_levelup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magdasid/daftacademy-frontend_levelup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magdasid/daftacademy-frontend_levelup/issues"
+  },
+  "homepage": "https://github.com/magdasid/daftacademy-frontend_levelup#readme",
+  "dependencies": {
+    "package": "^1.0.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "html-webpack-plugin": "^3.2.0"
+  },
+  "browserslist": "> 0.25%, not dead"
+}
