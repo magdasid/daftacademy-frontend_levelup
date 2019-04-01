@@ -1,3 +1,119 @@
-body {
-    background-color: pink;
+$color-mint: #EEF8F6;
+$color-navy: #27354f;
+$nav-color-mint: #A4BFBA;
+$nav-color-navy: #3a4860;
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 3% 3% 0% 3%;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    background-color: $color-mint;
+}
+.page-header {
+    position: relative;
+    width: 100%;
+}
+.page-logo{
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    text-align: center;
+    width: 120px;
+    border: 2px solid $color-navy;
+}
+.page-navigation {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 80px 10% 0% 170px;
+    
+
+    color: $nav-color-mint;
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        
+    }
+    &__link {
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover{
+            color: #415066;
+        }
+    }
+}
+.page-content {
+    padding: 4% 10% 5% 170px;
+    
+    .drink-gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        //justify-content: space-between;
+        height: 500px;
+        overflow: scroll;
+        scroll-padding-right: 30px;
+
+        &__item {    
+            width: 33%;
+            padding-bottom: 4%;
+            padding-right: 4%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__image {
+            width: 100%;
+        }
+        &__desc {
+            position: absolute;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            font-size: 30px;
+            color: white;
+            line-height: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+}
+
+.page-footer {
+    padding: 1% 4% 1% 4%;
+    display: flex;
+    width: 100%;
+}
+
+.contact-section {
+    width: 50%;
+}
+.media-menu{
+
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    &__items {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    &__item {
+        padding: 16px 10px;
+    }
+    
 }
