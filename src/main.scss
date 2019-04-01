@@ -34,8 +34,9 @@ ul {
 }
 .page-logo{
     font-family: $logo-font;
+    font-size: 40px;
     position: absolute;
-    top: -40px;
+    top: -55px;
     left: 40px;
     text-align: center;
     width: 120px;
@@ -228,7 +229,7 @@ ul {
     }
     .page-footer {
         flex-direction: column;
-        margin: 7% 4% 6% 13%;
+        //margin: 7% 4% 6% 13%;
     }
     .contact-section {
         width: 100%;            
