@@ -2,6 +2,8 @@ $color-mint: #EEF8F6;
 $color-navy: #27354f;
 $nav-color-mint: #A4BFBA;
 $nav-color-navy: #3a4860;
+$footer-gray: #CED1D8;
+$footer-menu-gray: #BECCE7;
 
 * {
     box-sizing: border-box;
@@ -32,16 +34,34 @@ ul {
 .page-navigation {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 80px 10% 0% 170px;
-    
-
     color: $nav-color-mint;
 
     &__items {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
-        
+    }
+    &__item {
+        //padding-bottom: 1px;
+        &-active {
+            color: $color-navy;
+            :after {
+                content: "";
+                display: block;
+                margin-left: 0;
+                width: calc(100% - 8px);
+                border-bottom: 1px solid $color-navy;
+            }
+        }
+        &:hover {
+            ::after {
+                content: "";
+                display: block;
+                margin-left: 0;
+                width: calc(100% - 8px);
+                border-bottom: 1px solid $color-navy;
+            }
+        }
     }
     &__link {
         text-align: center;
@@ -51,6 +71,7 @@ ul {
         &:hover{
             color: #415066;
         }
+
     }
 }
 .page-content {
@@ -60,7 +81,6 @@ ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        //justify-content: space-between;
         height: 500px;
         overflow: scroll;
         scroll-padding-right: 30px;
@@ -91,6 +111,7 @@ ul {
 }
 
 .page-footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 1% 4% 1% 4%;
     display: flex;
     width: 100%;
@@ -98,6 +119,15 @@ ul {
 
 .contact-section {
     width: 50%;
+    display: flex;
+    &__info {
+        color: $footer-gray;
+    }
+    &__email {
+        padding: 16px 10px;
+        color: $color-navy;
+        text-decoration: none;
+    }
 }
 .media-menu{
 
@@ -106,6 +136,13 @@ ul {
     flex-direction: row;
     justify-content: flex-end;
 
+    &__header {
+        color: $footer-gray;
+        padding: 16px 10px;
+        margin: 0;
+        font-size: 16px;
+        font-weight: normal;
+    }
     &__items {
         margin: 0;
         padding: 0;
@@ -114,6 +151,13 @@ ul {
     }
     &__item {
         padding: 16px 10px;
+        
+    }
+    &__logo {
+        height: 16px;
+        fill: $footer-menu-gray;
+        cursor: pointer;
+    
     }
     
 }
