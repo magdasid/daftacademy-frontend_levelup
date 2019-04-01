@@ -84,7 +84,7 @@ ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        height: 90%;
+        max-height: 60vh;
         overflow-y: auto;
         scroll-padding-right: 30px;
 
