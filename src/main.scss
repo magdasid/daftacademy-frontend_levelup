@@ -85,7 +85,7 @@ ul {
         flex-direction: row;
         flex-wrap: wrap;
         height: 90%;
-        overflow-y: scroll;
+        overflow-y: auto;
         scroll-padding-right: 30px;
 
         &__item {    
@@ -106,6 +106,7 @@ ul {
             padding: 0;
             margin: 0;
             font-size: 30px;
+            font-weight: 600;
             color: white;
             line-height: 50px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
