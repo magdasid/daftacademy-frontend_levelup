@@ -85,7 +85,7 @@ ul {
         flex-direction: row;
         flex-wrap: wrap;
         height: 90%;
-        overflow: scroll;
+        overflow-y: scroll;
         scroll-padding-right: 30px;
 
         &__item {    
