@@ -18,6 +18,8 @@ ul {
 }
 .wrapper {
     background-color: $color-mint;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .page-header {
     position: relative;
