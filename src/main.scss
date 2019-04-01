@@ -20,6 +20,7 @@ ul {
     background-color: $color-mint;
     max-width: 1200px;
     margin: 0 auto;
+    min-height: 80vh;
 }
 .page-header {
     position: relative;
@@ -83,7 +84,7 @@ ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        height: 500px;
+        height: 90%;
         overflow: scroll;
         scroll-padding-right: 30px;
 
