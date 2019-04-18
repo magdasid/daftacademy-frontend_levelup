@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/magdasid/daftacademy-frontend_levelup#readme",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "css-loader": "^2.1.1",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",

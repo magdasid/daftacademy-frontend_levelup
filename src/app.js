@@ -1,4 +1,9 @@
-import script from './script';
 import './main.scss';
 
-script();
+// Homework 1
+//import script from './script';
+//script();
+
+// Homework 3
+import 'babel-polyfill';
+import './promises'

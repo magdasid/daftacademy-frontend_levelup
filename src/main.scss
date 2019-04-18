@@ -190,6 +190,10 @@ ul {
         justify-content: space-around;
         &__items {
             flex-wrap: wrap;
+            
+        }
+        &__item {
+            padding: 0% 2% 1% 0%;
         }
     }
     .page-content {
@@ -251,6 +255,9 @@ ul {
         justify-content: space-around;
         &__items {
             flex-wrap: wrap;
+        }
+        &__item {
+            padding: 0% 2% 1% 0%;
         }
     }
     .page-content {
